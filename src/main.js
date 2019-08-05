@@ -3,3 +3,6 @@
 import a from './a.js'
 console.log('b模块');
 console.log(a);
+setTimeout(() => {
+    console.log('一秒后执行了');
+}, 1000);
