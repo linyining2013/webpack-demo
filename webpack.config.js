@@ -30,7 +30,7 @@ module.exports = {
     }),
     new CleanWebpckPlugin(),
     new CopyWebpckPlugin([
-       {
+      {
         from: path.join(__dirname, 'assets'),
         to: 'assets'
       }
@@ -48,13 +48,13 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test:/\.(html|htm)$/i,
-        loader:'html-withimg-loader'
+        test: /\.(html|htm)$/i,
+        loader: 'html-withimg-loader'
       }
     ]
   },
   // source-map 源码映射
   devtool: 'cheap-module-eval-source-map'
   // babel是新一代JavaScript编译器
-}  
+}
 // 多应用打包 1.修改多入口，2.多入口无法对应一个固定的出口，所以修改filename为[name]变量3.如果用了html插件，需要手动配置多入口文件的html文件，将制定对应的输出文件
