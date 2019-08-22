@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    <div>55454</div>
-    <script src="/bundle.js"></script>
+    <div id="app">
+        <h2 v-text='msg'></h2>
+        <router-link to="/home">首页</router-link>
+        <router-link to="/news">新闻</router-link>
+        <router-view></router-view>
+    </div>
     <!-- 浏览器解析不了CommonJS语法规范 node支持 -->
 </body>
+
 </html>
