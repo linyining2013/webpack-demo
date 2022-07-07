@@ -59,7 +59,7 @@
     "bootstrap": "^3.4.1",
     "html-withimg-loader": "^0.1.16",
     "jquery": "^3.4.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "vue": "^2.6.10",
